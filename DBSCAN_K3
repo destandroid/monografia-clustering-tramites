@@ -1,0 +1,746 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.MakeDensityBasedClusterer -M 1.0E-6 -W weka.clusterers.SimpleKMeans -- -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 4 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     tramites_gob_bo_preprocesado_one_hot_weka
+Instances:    1029
+Attributes:   68
+              duracion_meses
+              duracion_dias
+              duracion_horas
+              duracion_minutos
+              denominacion_Agencia Estatal de Medicamentos y Tecnologías en Salud
+              denominacion_Agencia Estatal de Vivienda
+              denominacion_Agencia Nacional de Hidrocarburos
+              denominacion_Agencia para el Desarrollo de la Sociedad de la Información en Bolivia
+              denominacion_Autoridad de Fiscalización y Control Social de Agua Potable y Saneamiento Básico
+              denominacion_Autoridad de Fiscalización y Control Social de Bosques y Tierras
+              denominacion_Autoridad de Regulación y Fiscalización de Telecomunicaciones y Transportes
+              denominacion_Comando General de la Policía Boliviana
+              denominacion_Comité Ejecutivo de la Universidad Boliviana
+              denominacion_Consejo Nacional del Cine
+              denominacion_Consejo de la Magistratura
+              denominacion_Corporación Minera de Bolivia
+              denominacion_Dirección Departamental de Educación Chuquisaca
+              denominacion_Dirección Departamental de Educación La Paz
+              denominacion_Dirección Departamental de Educación Tarija
+              denominacion_Dirección General de Migración
+              denominacion_Dirección del Notariado Plurinacional
+              denominacion_Escuela Nacional de Salud
+              denominacion_Escuela de Gestión Pública Plurinacional
+              denominacion_Gobierno Autonomo Municipal de Trinidad
+              denominacion_Gobierno Autónomo Departamental de Cochabamba
+              denominacion_Instituto Boliviano de Metrología
+              denominacion_Instituto Boliviano de la Ceguera
+              denominacion_Instituto Geográfico Militar
+              denominacion_Instituto Nacional de Innovación Agropecuaria y Forestal
+              denominacion_Ministerio de Culturas y Turismo
+              denominacion_Ministerio de Desarrollo Rural y Tierras
+              denominacion_Ministerio de Educación de Bolivia
+              denominacion_Ministerio de Gobierno
+              denominacion_Ministerio de Justicia y Transparencia Interinstitucional
+              denominacion_Ministerio de Medio Ambiente y Agua
+              denominacion_Ministerio de Obras Públicas, Servicios y Vivienda
+              denominacion_Ministerio de Salud
+              denominacion_Ministerio de Trabajo, Empleo y Previsión Social
+              denominacion_Ministerio de la Presidencia
+              denominacion_Ministerio de Planificación del Desarrollo
+              denominacion_Pro – Bolivia
+              denominacion_Seguro Social Universitario de Cochabamba
+              denominacion_Seguro Social Universitario de Oruro
+              denominacion_Seguro Social Universitario de Tarija
+              denominacion_Servicio General de Identificación Personal
+              denominacion_Servicio General de Licencias de Conducir
+              denominacion_Servicio Nacional de Meteorología e Hidrología
+              denominacion_Servicio Nacional de Propiedad Intelectual
+              denominacion_Servicio Nacional del Sistema de Reparto
+              denominacion_Servicio de Impuestos Nacionales
+              denominacion_Universidad Autónoma Tomás Frías
+              denominacion_Universidad Mayor Real y Pontificia de San Francisco Xavier
+              denominacion_Universidad Mayor de San Andrés
+              denominacion_Universidad Técnica de Oruro
+              denominacion_Zona Franca Comercial e Industrial de Cobija
+              forma_pago_costo_Depósito en cuenta
+              forma_pago_costo_Efectivo
+              descripcion_categoria_Bienes Inmuebles
+              descripcion_categoria_Cultura y Turismo
+              descripcion_categoria_Económico-Productivo
+              descripcion_categoria_Educación
+              descripcion_categoria_Gobierno
+              descripcion_categoria_Identificación
+              descripcion_categoria_Impuestos
+              descripcion_categoria_Justicia
+              descripcion_categoria_Medio Ambiente
+              descripcion_categoria_Salud
+              descripcion_categoria_Transporte
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+MakeDensityBasedClusterer: 
+
+Wrapped clusterer: 
+kMeans
+======
+
+Number of iterations: 5
+Within cluster sum of squared errors: 1516.4569992017468
+
+Initial starting points (random):
+
+Cluster 0: 0,0.015,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+Cluster 1: 0,0.015,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+Cluster 2: 0,0.04,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0
+Cluster 3: 0,0.05,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                                                                                               Cluster#
+Attribute                                                                                          Full Data          0          1          2          3
+                                                                                                    (1029.0)    (110.0)    (591.0)    (142.0)    (186.0)
+========================================================================================================================================================
+duracion_meses                                                                                        0.0224     0.0013     0.0362          0     0.0079
+duracion_dias                                                                                         0.0624     0.0275     0.0894     0.0294     0.0221
+duracion_horas                                                                                        0.0665     0.0387     0.0609     0.0027     0.1492
+duracion_minutos                                                                                       0.023     0.0387     0.0208     0.0352     0.0112
+denominacion_Agencia Estatal de Medicamentos y Tecnologías en Salud                                  0.0466          0     0.0812          0          0
+denominacion_Agencia Estatal de Vivienda                                                               0.001     0.0091          0          0          0
+denominacion_Agencia Nacional de Hidrocarburos                                                         0.001          0     0.0017          0          0
+denominacion_Agencia para el Desarrollo de la Sociedad de la Información en Bolivia                  0.0029          0     0.0051          0          0
+denominacion_Autoridad de Fiscalización y Control Social de Agua Potable y Saneamiento Básico        0.001     0.0091          0          0          0
+denominacion_Autoridad de Fiscalización y Control Social de Bosques y Tierras                        0.0603          0     0.1049          0          0
+denominacion_Autoridad de Regulación y Fiscalización de Telecomunicaciones y Transportes             0.001          0     0.0017          0          0
+denominacion_Comando General de la Policía Boliviana                                                 0.0224     0.0364     0.0321          0          0
+denominacion_Comité Ejecutivo de la Universidad Boliviana                                            0.0019          0          0          0     0.0108
+denominacion_Consejo Nacional del Cine                                                                0.0058     0.0091     0.0085          0          0
+denominacion_Consejo de la Magistratura                                                               0.0058     0.0545          0          0          0
+denominacion_Corporación Minera de Bolivia                                                           0.0078          0     0.0135          0          0
+denominacion_Dirección Departamental de Educación Chuquisaca                                        0.0107          0          0          0     0.0591
+denominacion_Dirección Departamental de Educación La Paz                                            0.0126          0      0.022          0          0
+denominacion_Dirección Departamental de Educación Tarija                                            0.0243          0     0.0135          0     0.0914
+denominacion_Dirección General de Migración                                                         0.1681     0.2727          0          1     0.0054
+denominacion_Dirección del Notariado Plurinacional                                                    0.001          0     0.0017          0          0
+denominacion_Escuela Nacional de Salud                                                                0.0058     0.0273          0          0     0.0161
+denominacion_Escuela de Gestión Pública Plurinacional                                                0.001          0     0.0017          0          0
+denominacion_Gobierno Autonomo Municipal de Trinidad                                                   0.001     0.0091          0          0          0
+denominacion_Gobierno Autónomo Departamental de Cochabamba                                           0.0126     0.1182          0          0          0
+denominacion_Instituto Boliviano de Metrología                                                       0.0155          0     0.0271          0          0
+denominacion_Instituto Boliviano de la Ceguera                                                        0.0078     0.0182     0.0102          0          0
+denominacion_Instituto Geográfico Militar                                                            0.0019     0.0091          0          0     0.0054
+denominacion_Instituto Nacional de Innovación Agropecuaria y Forestal                                0.0039          0     0.0068          0          0
+denominacion_Ministerio de Culturas y Turismo                                                         0.0068          0     0.0118          0          0
+denominacion_Ministerio de Desarrollo Rural y Tierras                                                  0.001          0     0.0017          0          0
+denominacion_Ministerio de Educación de Bolivia                                                      0.0982          0          0          0      0.543
+denominacion_Ministerio de Gobierno                                                                   0.0126          0      0.022          0          0
+denominacion_Ministerio de Justicia y Transparencia Interinstitucional                                0.0049          0     0.0085          0          0
+denominacion_Ministerio de Medio Ambiente y Agua                                                      0.0155          0     0.0271          0          0
+denominacion_Ministerio de Obras Públicas, Servicios y Vivienda                                      0.0204     0.0182     0.0321          0          0
+denominacion_Ministerio de Salud                                                                      0.0029     0.0091     0.0034          0          0
+denominacion_Ministerio de Trabajo, Empleo y Previsión Social                                        0.0039          0     0.0068          0          0
+denominacion_Ministerio de la Presidencia                                                             0.0126          0      0.022          0          0
+denominacion_Ministerio de Planificación del Desarrollo                                          0.0466          0     0.0812          0          0
+denominacion_Pro – Bolivia                                                                           0.001          0     0.0017          0          0
+denominacion_Seguro Social Universitario de Cochabamba                                                0.0097     0.0909          0          0          0
+denominacion_Seguro Social Universitario de Oruro                                                     0.0039     0.0364          0          0          0
+denominacion_Seguro Social Universitario de Tarija                                                    0.0058     0.0545          0          0          0
+denominacion_Servicio General de Identificación Personal                                             0.0058          0     0.0102          0          0
+denominacion_Servicio General de Licencias de Conducir                                                0.0272          0     0.0474          0          0
+denominacion_Servicio Nacional de Meteorología e Hidrología                                         0.0019          0     0.0034          0          0
+denominacion_Servicio Nacional de Propiedad Intelectual                                               0.2225          0     0.3875          0          0
+denominacion_Servicio Nacional del Sistema de Reparto                                                 0.0136     0.1273          0          0          0
+denominacion_Servicio de Impuestos Nacionales                                                         0.0029     0.0273          0          0          0
+denominacion_Universidad Autónoma Tomás Frías                                                      0.0019          0     0.0017          0     0.0054
+denominacion_Universidad Mayor Real y Pontificia de San Francisco Xavier                              0.0107          0          0          0     0.0591
+denominacion_Universidad Mayor de San Andrés                                                         0.0058          0          0          0     0.0323
+denominacion_Universidad Técnica de Oruro                                                            0.0311          0          0          0      0.172
+denominacion_Zona Franca Comercial e Industrial de Cobija                                             0.0068     0.0636          0          0          0
+forma_pago_costo_Depósito en cuenta                                                                  0.7337          0          1          1     0.1183
+forma_pago_costo_Efectivo                                                                             0.2663          1          0          0     0.8817
+descripcion_categoria_Bienes Inmuebles                                                                0.0068     0.0636          0          0          0
+descripcion_categoria_Cultura y Turismo                                                               0.0719     0.0364     0.0981     0.0845          0
+descripcion_categoria_Económico-Productivo                                                           0.1914     0.0364     0.3029     0.0986          0
+descripcion_categoria_Educación                                                                      0.2624          0     0.1168     0.1056          1
+descripcion_categoria_Gobierno                                                                        0.1458     0.3818     0.0948     0.3662          0
+descripcion_categoria_Identificación                                                                 0.0671     0.1182     0.0609     0.1408          0
+descripcion_categoria_Impuestos                                                                       0.0049     0.0364          0      0.007          0
+descripcion_categoria_Justicia                                                                        0.0486     0.0636     0.0457     0.1127          0
+descripcion_categoria_Medio Ambiente                                                                  0.0515     0.0091      0.088          0          0
+descripcion_categoria_Salud                                                                           0.0904     0.2091     0.0998     0.0775          0
+descripcion_categoria_Transporte                                                                      0.0593     0.0455     0.0931      0.007          0
+
+
+
+Fitted estimators (with ML estimates of variance):
+
+Cluster: 0 Prior probability: 0.1075
+
+Attribute: duracion_meses
+Normal Distribution. Mean = 0.0013 StdDev = 0.0078
+Attribute: duracion_dias
+Normal Distribution. Mean = 0.0275 StdDev = 0.049
+Attribute: duracion_horas
+Normal Distribution. Mean = 0.0387 StdDev = 0.1281
+Attribute: duracion_minutos
+Normal Distribution. Mean = 0.0387 StdDev = 0.1352
+Attribute: denominacion_Agencia Estatal de Medicamentos y Tecnologías en Salud
+Normal Distribution. Mean = 0 StdDev = 0.211
+Attribute: denominacion_Agencia Estatal de Vivienda
+Normal Distribution. Mean = 0.0091 StdDev = 0.0949
+Attribute: denominacion_Agencia Nacional de Hidrocarburos
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Agencia para el Desarrollo de la Sociedad de la Información en Bolivia
+Normal Distribution. Mean = 0 StdDev = 0.0539
+Attribute: denominacion_Autoridad de Fiscalización y Control Social de Agua Potable y Saneamiento Básico
+Normal Distribution. Mean = 0.0091 StdDev = 0.0949
+Attribute: denominacion_Autoridad de Fiscalización y Control Social de Bosques y Tierras
+Normal Distribution. Mean = 0 StdDev = 0.2381
+Attribute: denominacion_Autoridad de Regulación y Fiscalización de Telecomunicaciones y Transportes
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Comando General de la Policía Boliviana
+Normal Distribution. Mean = 0.0364 StdDev = 0.1872
+Attribute: denominacion_Comité Ejecutivo de la Universidad Boliviana
+Normal Distribution. Mean = 0 StdDev = 0.0441
+Attribute: denominacion_Consejo Nacional del Cine
+Normal Distribution. Mean = 0.0091 StdDev = 0.0949
+Attribute: denominacion_Consejo de la Magistratura
+Normal Distribution. Mean = 0.0545 StdDev = 0.2271
+Attribute: denominacion_Corporación Minera de Bolivia
+Normal Distribution. Mean = 0 StdDev = 0.0879
+Attribute: denominacion_Dirección Departamental de Educación Chuquisaca
+Normal Distribution. Mean = 0 StdDev = 0.1029
+Attribute: denominacion_Dirección Departamental de Educación La Paz
+Normal Distribution. Mean = 0 StdDev = 0.1117
+Attribute: denominacion_Dirección Departamental de Educación Tarija
+Normal Distribution. Mean = 0 StdDev = 0.154
+Attribute: denominacion_Dirección General de Migración
+Normal Distribution. Mean = 0.2727 StdDev = 0.4454
+Attribute: denominacion_Dirección del Notariado Plurinacional
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Escuela Nacional de Salud
+Normal Distribution. Mean = 0.0273 StdDev = 0.1629
+Attribute: denominacion_Escuela de Gestión Pública Plurinacional
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Gobierno Autonomo Municipal de Trinidad
+Normal Distribution. Mean = 0.0091 StdDev = 0.0949
+Attribute: denominacion_Gobierno Autónomo Departamental de Cochabamba
+Normal Distribution. Mean = 0.1182 StdDev = 0.3228
+Attribute: denominacion_Instituto Boliviano de Metrología
+Normal Distribution. Mean = 0 StdDev = 0.1238
+Attribute: denominacion_Instituto Boliviano de la Ceguera
+Normal Distribution. Mean = 0.0182 StdDev = 0.1336
+Attribute: denominacion_Instituto Geográfico Militar
+Normal Distribution. Mean = 0.0091 StdDev = 0.0949
+Attribute: denominacion_Instituto Nacional de Innovación Agropecuaria y Forestal
+Normal Distribution. Mean = 0 StdDev = 0.0623
+Attribute: denominacion_Ministerio de Culturas y Turismo
+Normal Distribution. Mean = 0 StdDev = 0.0822
+Attribute: denominacion_Ministerio de Desarrollo Rural y Tierras
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Ministerio de Educación de Bolivia
+Normal Distribution. Mean = 0 StdDev = 0.2977
+Attribute: denominacion_Ministerio de Gobierno
+Normal Distribution. Mean = 0 StdDev = 0.1117
+Attribute: denominacion_Ministerio de Justicia y Transparencia Interinstitucional
+Normal Distribution. Mean = 0 StdDev = 0.0696
+Attribute: denominacion_Ministerio de Medio Ambiente y Agua
+Normal Distribution. Mean = 0 StdDev = 0.1238
+Attribute: denominacion_Ministerio de Obras Públicas, Servicios y Vivienda
+Normal Distribution. Mean = 0.0182 StdDev = 0.1336
+Attribute: denominacion_Ministerio de Salud
+Normal Distribution. Mean = 0.0091 StdDev = 0.0949
+Attribute: denominacion_Ministerio de Trabajo, Empleo y Previsión Social
+Normal Distribution. Mean = 0 StdDev = 0.0623
+Attribute: denominacion_Ministerio de la Presidencia
+Normal Distribution. Mean = 0 StdDev = 0.1117
+Attribute: denominacion_Ministerio de Planificación del Desarrollo
+Normal Distribution. Mean = 0 StdDev = 0.211
+Attribute: denominacion_Pro – Bolivia
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Seguro Social Universitario de Cochabamba
+Normal Distribution. Mean = 0.0909 StdDev = 0.2875
+Attribute: denominacion_Seguro Social Universitario de Oruro
+Normal Distribution. Mean = 0.0364 StdDev = 0.1872
+Attribute: denominacion_Seguro Social Universitario de Tarija
+Normal Distribution. Mean = 0.0545 StdDev = 0.2271
+Attribute: denominacion_Servicio General de Identificación Personal
+Normal Distribution. Mean = 0 StdDev = 0.0762
+Attribute: denominacion_Servicio General de Licencias de Conducir
+Normal Distribution. Mean = 0 StdDev = 0.1628
+Attribute: denominacion_Servicio Nacional de Meteorología e Hidrología
+Normal Distribution. Mean = 0 StdDev = 0.0441
+Attribute: denominacion_Servicio Nacional de Propiedad Intelectual
+Normal Distribution. Mean = 0 StdDev = 0.4162
+Attribute: denominacion_Servicio Nacional del Sistema de Reparto
+Normal Distribution. Mean = 0.1273 StdDev = 0.3333
+Attribute: denominacion_Servicio de Impuestos Nacionales
+Normal Distribution. Mean = 0.0273 StdDev = 0.1629
+Attribute: denominacion_Universidad Autónoma Tomás Frías
+Normal Distribution. Mean = 0 StdDev = 0.0441
+Attribute: denominacion_Universidad Mayor Real y Pontificia de San Francisco Xavier
+Normal Distribution. Mean = 0 StdDev = 0.1029
+Attribute: denominacion_Universidad Mayor de San Andrés
+Normal Distribution. Mean = 0 StdDev = 0.0762
+Attribute: denominacion_Universidad Técnica de Oruro
+Normal Distribution. Mean = 0 StdDev = 0.1737
+Attribute: denominacion_Zona Franca Comercial e Industrial de Cobija
+Normal Distribution. Mean = 0.0636 StdDev = 0.2441
+Attribute: forma_pago_costo_Depósito en cuenta
+Normal Distribution. Mean = 0 StdDev = 0.4422
+Attribute: forma_pago_costo_Efectivo
+Normal Distribution. Mean = 1 StdDev = 0.4422
+Attribute: descripcion_categoria_Bienes Inmuebles
+Normal Distribution. Mean = 0.0636 StdDev = 0.2441
+Attribute: descripcion_categoria_Cultura y Turismo
+Normal Distribution. Mean = 0.0364 StdDev = 0.1872
+Attribute: descripcion_categoria_Económico-Productivo
+Normal Distribution. Mean = 0.0364 StdDev = 0.1872
+Attribute: descripcion_categoria_Educación
+Normal Distribution. Mean = 0 StdDev = 0.4401
+Attribute: descripcion_categoria_Gobierno
+Normal Distribution. Mean = 0.3818 StdDev = 0.4858
+Attribute: descripcion_categoria_Identificación
+Normal Distribution. Mean = 0.1182 StdDev = 0.3228
+Attribute: descripcion_categoria_Impuestos
+Normal Distribution. Mean = 0.0364 StdDev = 0.1872
+Attribute: descripcion_categoria_Justicia
+Normal Distribution. Mean = 0.0636 StdDev = 0.2441
+Attribute: descripcion_categoria_Medio Ambiente
+Normal Distribution. Mean = 0.0091 StdDev = 0.0949
+Attribute: descripcion_categoria_Salud
+Normal Distribution. Mean = 0.2091 StdDev = 0.4067
+Attribute: descripcion_categoria_Transporte
+Normal Distribution. Mean = 0.0455 StdDev = 0.2083
+
+Cluster: 1 Prior probability: 0.5731
+
+Attribute: duracion_meses
+Normal Distribution. Mean = 0.0362 StdDev = 0.1399
+Attribute: duracion_dias
+Normal Distribution. Mean = 0.0894 StdDev = 0.2292
+Attribute: duracion_horas
+Normal Distribution. Mean = 0.0609 StdDev = 0.181
+Attribute: duracion_minutos
+Normal Distribution. Mean = 0.0208 StdDev = 0.0606
+Attribute: denominacion_Agencia Estatal de Medicamentos y Tecnologías en Salud
+Normal Distribution. Mean = 0.0812 StdDev = 0.2732
+Attribute: denominacion_Agencia Estatal de Vivienda
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Agencia Nacional de Hidrocarburos
+Normal Distribution. Mean = 0.0017 StdDev = 0.0411
+Attribute: denominacion_Agencia para el Desarrollo de la Sociedad de la Información en Bolivia
+Normal Distribution. Mean = 0.0051 StdDev = 0.0711
+Attribute: denominacion_Autoridad de Fiscalización y Control Social de Agua Potable y Saneamiento Básico
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Autoridad de Fiscalización y Control Social de Bosques y Tierras
+Normal Distribution. Mean = 0.1049 StdDev = 0.3064
+Attribute: denominacion_Autoridad de Regulación y Fiscalización de Telecomunicaciones y Transportes
+Normal Distribution. Mean = 0.0017 StdDev = 0.0411
+Attribute: denominacion_Comando General de la Policía Boliviana
+Normal Distribution. Mean = 0.0321 StdDev = 0.1764
+Attribute: denominacion_Comité Ejecutivo de la Universidad Boliviana
+Normal Distribution. Mean = 0 StdDev = 0.0441
+Attribute: denominacion_Consejo Nacional del Cine
+Normal Distribution. Mean = 0.0085 StdDev = 0.0916
+Attribute: denominacion_Consejo de la Magistratura
+Normal Distribution. Mean = 0 StdDev = 0.0762
+Attribute: denominacion_Corporación Minera de Bolivia
+Normal Distribution. Mean = 0.0135 StdDev = 0.1156
+Attribute: denominacion_Dirección Departamental de Educación Chuquisaca
+Normal Distribution. Mean = 0 StdDev = 0.1029
+Attribute: denominacion_Dirección Departamental de Educación La Paz
+Normal Distribution. Mean = 0.022 StdDev = 0.1467
+Attribute: denominacion_Dirección Departamental de Educación Tarija
+Normal Distribution. Mean = 0.0135 StdDev = 0.1156
+Attribute: denominacion_Dirección General de Migración
+Normal Distribution. Mean = 0 StdDev = 0.3742
+Attribute: denominacion_Dirección del Notariado Plurinacional
+Normal Distribution. Mean = 0.0017 StdDev = 0.0411
+Attribute: denominacion_Escuela Nacional de Salud
+Normal Distribution. Mean = 0 StdDev = 0.0762
+Attribute: denominacion_Escuela de Gestión Pública Plurinacional
+Normal Distribution. Mean = 0.0017 StdDev = 0.0411
+Attribute: denominacion_Gobierno Autonomo Municipal de Trinidad
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Gobierno Autónomo Departamental de Cochabamba
+Normal Distribution. Mean = 0 StdDev = 0.1117
+Attribute: denominacion_Instituto Boliviano de Metrología
+Normal Distribution. Mean = 0.0271 StdDev = 0.1623
+Attribute: denominacion_Instituto Boliviano de la Ceguera
+Normal Distribution. Mean = 0.0102 StdDev = 0.1002
+Attribute: denominacion_Instituto Geográfico Militar
+Normal Distribution. Mean = 0 StdDev = 0.0441
+Attribute: denominacion_Instituto Nacional de Innovación Agropecuaria y Forestal
+Normal Distribution. Mean = 0.0068 StdDev = 0.082
+Attribute: denominacion_Ministerio de Culturas y Turismo
+Normal Distribution. Mean = 0.0118 StdDev = 0.1082
+Attribute: denominacion_Ministerio de Desarrollo Rural y Tierras
+Normal Distribution. Mean = 0.0017 StdDev = 0.0411
+Attribute: denominacion_Ministerio de Educación de Bolivia
+Normal Distribution. Mean = 0 StdDev = 0.2977
+Attribute: denominacion_Ministerio de Gobierno
+Normal Distribution. Mean = 0.022 StdDev = 0.1467
+Attribute: denominacion_Ministerio de Justicia y Transparencia Interinstitucional
+Normal Distribution. Mean = 0.0085 StdDev = 0.0916
+Attribute: denominacion_Ministerio de Medio Ambiente y Agua
+Normal Distribution. Mean = 0.0271 StdDev = 0.1623
+Attribute: denominacion_Ministerio de Obras Públicas, Servicios y Vivienda
+Normal Distribution. Mean = 0.0321 StdDev = 0.1764
+Attribute: denominacion_Ministerio de Salud
+Normal Distribution. Mean = 0.0034 StdDev = 0.0581
+Attribute: denominacion_Ministerio de Trabajo, Empleo y Previsión Social
+Normal Distribution. Mean = 0.0068 StdDev = 0.082
+Attribute: denominacion_Ministerio de la Presidencia
+Normal Distribution. Mean = 0.022 StdDev = 0.1467
+Attribute: denominacion_Ministerio de Planificación del Desarrollo
+Normal Distribution. Mean = 0.0812 StdDev = 0.2732
+Attribute: denominacion_Pro – Bolivia
+Normal Distribution. Mean = 0.0017 StdDev = 0.0411
+Attribute: denominacion_Seguro Social Universitario de Cochabamba
+Normal Distribution. Mean = 0 StdDev = 0.0981
+Attribute: denominacion_Seguro Social Universitario de Oruro
+Normal Distribution. Mean = 0 StdDev = 0.0623
+Attribute: denominacion_Seguro Social Universitario de Tarija
+Normal Distribution. Mean = 0 StdDev = 0.0762
+Attribute: denominacion_Servicio General de Identificación Personal
+Normal Distribution. Mean = 0.0102 StdDev = 0.1002
+Attribute: denominacion_Servicio General de Licencias de Conducir
+Normal Distribution. Mean = 0.0474 StdDev = 0.2124
+Attribute: denominacion_Servicio Nacional de Meteorología e Hidrología
+Normal Distribution. Mean = 0.0034 StdDev = 0.0581
+Attribute: denominacion_Servicio Nacional de Propiedad Intelectual
+Normal Distribution. Mean = 0.3875 StdDev = 0.4872
+Attribute: denominacion_Servicio Nacional del Sistema de Reparto
+Normal Distribution. Mean = 0 StdDev = 0.1159
+Attribute: denominacion_Servicio de Impuestos Nacionales
+Normal Distribution. Mean = 0 StdDev = 0.0539
+Attribute: denominacion_Universidad Autónoma Tomás Frías
+Normal Distribution. Mean = 0.0017 StdDev = 0.0411
+Attribute: denominacion_Universidad Mayor Real y Pontificia de San Francisco Xavier
+Normal Distribution. Mean = 0 StdDev = 0.1029
+Attribute: denominacion_Universidad Mayor de San Andrés
+Normal Distribution. Mean = 0 StdDev = 0.0762
+Attribute: denominacion_Universidad Técnica de Oruro
+Normal Distribution. Mean = 0 StdDev = 0.1737
+Attribute: denominacion_Zona Franca Comercial e Industrial de Cobija
+Normal Distribution. Mean = 0 StdDev = 0.0822
+Attribute: forma_pago_costo_Depósito en cuenta
+Normal Distribution. Mean = 1 StdDev = 0.4422
+Attribute: forma_pago_costo_Efectivo
+Normal Distribution. Mean = 0 StdDev = 0.4422
+Attribute: descripcion_categoria_Bienes Inmuebles
+Normal Distribution. Mean = 0 StdDev = 0.0822
+Attribute: descripcion_categoria_Cultura y Turismo
+Normal Distribution. Mean = 0.0981 StdDev = 0.2975
+Attribute: descripcion_categoria_Económico-Productivo
+Normal Distribution. Mean = 0.3029 StdDev = 0.4595
+Attribute: descripcion_categoria_Educación
+Normal Distribution. Mean = 0.1168 StdDev = 0.3211
+Attribute: descripcion_categoria_Gobierno
+Normal Distribution. Mean = 0.0948 StdDev = 0.2929
+Attribute: descripcion_categoria_Identificación
+Normal Distribution. Mean = 0.0609 StdDev = 0.2392
+Attribute: descripcion_categoria_Impuestos
+Normal Distribution. Mean = 0 StdDev = 0.0696
+Attribute: descripcion_categoria_Justicia
+Normal Distribution. Mean = 0.0457 StdDev = 0.2088
+Attribute: descripcion_categoria_Medio Ambiente
+Normal Distribution. Mean = 0.088 StdDev = 0.2833
+Attribute: descripcion_categoria_Salud
+Normal Distribution. Mean = 0.0998 StdDev = 0.2998
+Attribute: descripcion_categoria_Transporte
+Normal Distribution. Mean = 0.0931 StdDev = 0.2905
+
+Cluster: 2 Prior probability: 0.1384
+
+Attribute: duracion_meses
+Normal Distribution. Mean = 0 StdDev = 0.1116
+Attribute: duracion_dias
+Normal Distribution. Mean = 0.0294 StdDev = 0.0166
+Attribute: duracion_horas
+Normal Distribution. Mean = 0.0027 StdDev = 0.0113
+Attribute: duracion_minutos
+Normal Distribution. Mean = 0.0352 StdDev = 0.1471
+Attribute: denominacion_Agencia Estatal de Medicamentos y Tecnologías en Salud
+Normal Distribution. Mean = 0 StdDev = 0.211
+Attribute: denominacion_Agencia Estatal de Vivienda
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Agencia Nacional de Hidrocarburos
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Agencia para el Desarrollo de la Sociedad de la Información en Bolivia
+Normal Distribution. Mean = 0 StdDev = 0.0539
+Attribute: denominacion_Autoridad de Fiscalización y Control Social de Agua Potable y Saneamiento Básico
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Autoridad de Fiscalización y Control Social de Bosques y Tierras
+Normal Distribution. Mean = 0 StdDev = 0.2381
+Attribute: denominacion_Autoridad de Regulación y Fiscalización de Telecomunicaciones y Transportes
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Comando General de la Policía Boliviana
+Normal Distribution. Mean = 0 StdDev = 0.1479
+Attribute: denominacion_Comité Ejecutivo de la Universidad Boliviana
+Normal Distribution. Mean = 0 StdDev = 0.0441
+Attribute: denominacion_Consejo Nacional del Cine
+Normal Distribution. Mean = 0 StdDev = 0.0762
+Attribute: denominacion_Consejo de la Magistratura
+Normal Distribution. Mean = 0 StdDev = 0.0762
+Attribute: denominacion_Corporación Minera de Bolivia
+Normal Distribution. Mean = 0 StdDev = 0.0879
+Attribute: denominacion_Dirección Departamental de Educación Chuquisaca
+Normal Distribution. Mean = 0 StdDev = 0.1029
+Attribute: denominacion_Dirección Departamental de Educación La Paz
+Normal Distribution. Mean = 0 StdDev = 0.1117
+Attribute: denominacion_Dirección Departamental de Educación Tarija
+Normal Distribution. Mean = 0 StdDev = 0.154
+Attribute: denominacion_Dirección General de Migración
+Normal Distribution. Mean = 1 StdDev = 0.3742
+Attribute: denominacion_Dirección del Notariado Plurinacional
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Escuela Nacional de Salud
+Normal Distribution. Mean = 0 StdDev = 0.0762
+Attribute: denominacion_Escuela de Gestión Pública Plurinacional
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Gobierno Autonomo Municipal de Trinidad
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Gobierno Autónomo Departamental de Cochabamba
+Normal Distribution. Mean = 0 StdDev = 0.1117
+Attribute: denominacion_Instituto Boliviano de Metrología
+Normal Distribution. Mean = 0 StdDev = 0.1238
+Attribute: denominacion_Instituto Boliviano de la Ceguera
+Normal Distribution. Mean = 0 StdDev = 0.0879
+Attribute: denominacion_Instituto Geográfico Militar
+Normal Distribution. Mean = 0 StdDev = 0.0441
+Attribute: denominacion_Instituto Nacional de Innovación Agropecuaria y Forestal
+Normal Distribution. Mean = 0 StdDev = 0.0623
+Attribute: denominacion_Ministerio de Culturas y Turismo
+Normal Distribution. Mean = 0 StdDev = 0.0822
+Attribute: denominacion_Ministerio de Desarrollo Rural y Tierras
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Ministerio de Educación de Bolivia
+Normal Distribution. Mean = 0 StdDev = 0.2977
+Attribute: denominacion_Ministerio de Gobierno
+Normal Distribution. Mean = 0 StdDev = 0.1117
+Attribute: denominacion_Ministerio de Justicia y Transparencia Interinstitucional
+Normal Distribution. Mean = 0 StdDev = 0.0696
+Attribute: denominacion_Ministerio de Medio Ambiente y Agua
+Normal Distribution. Mean = 0 StdDev = 0.1238
+Attribute: denominacion_Ministerio de Obras Públicas, Servicios y Vivienda
+Normal Distribution. Mean = 0 StdDev = 0.1415
+Attribute: denominacion_Ministerio de Salud
+Normal Distribution. Mean = 0 StdDev = 0.0539
+Attribute: denominacion_Ministerio de Trabajo, Empleo y Previsión Social
+Normal Distribution. Mean = 0 StdDev = 0.0623
+Attribute: denominacion_Ministerio de la Presidencia
+Normal Distribution. Mean = 0 StdDev = 0.1117
+Attribute: denominacion_Ministerio de Planificación del Desarrollo
+Normal Distribution. Mean = 0 StdDev = 0.211
+Attribute: denominacion_Pro – Bolivia
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Seguro Social Universitario de Cochabamba
+Normal Distribution. Mean = 0 StdDev = 0.0981
+Attribute: denominacion_Seguro Social Universitario de Oruro
+Normal Distribution. Mean = 0 StdDev = 0.0623
+Attribute: denominacion_Seguro Social Universitario de Tarija
+Normal Distribution. Mean = 0 StdDev = 0.0762
+Attribute: denominacion_Servicio General de Identificación Personal
+Normal Distribution. Mean = 0 StdDev = 0.0762
+Attribute: denominacion_Servicio General de Licencias de Conducir
+Normal Distribution. Mean = 0 StdDev = 0.1628
+Attribute: denominacion_Servicio Nacional de Meteorología e Hidrología
+Normal Distribution. Mean = 0 StdDev = 0.0441
+Attribute: denominacion_Servicio Nacional de Propiedad Intelectual
+Normal Distribution. Mean = 0 StdDev = 0.4162
+Attribute: denominacion_Servicio Nacional del Sistema de Reparto
+Normal Distribution. Mean = 0 StdDev = 0.1159
+Attribute: denominacion_Servicio de Impuestos Nacionales
+Normal Distribution. Mean = 0 StdDev = 0.0539
+Attribute: denominacion_Universidad Autónoma Tomás Frías
+Normal Distribution. Mean = 0 StdDev = 0.0441
+Attribute: denominacion_Universidad Mayor Real y Pontificia de San Francisco Xavier
+Normal Distribution. Mean = 0 StdDev = 0.1029
+Attribute: denominacion_Universidad Mayor de San Andrés
+Normal Distribution. Mean = 0 StdDev = 0.0762
+Attribute: denominacion_Universidad Técnica de Oruro
+Normal Distribution. Mean = 0 StdDev = 0.1737
+Attribute: denominacion_Zona Franca Comercial e Industrial de Cobija
+Normal Distribution. Mean = 0 StdDev = 0.0822
+Attribute: forma_pago_costo_Depósito en cuenta
+Normal Distribution. Mean = 1 StdDev = 0.4422
+Attribute: forma_pago_costo_Efectivo
+Normal Distribution. Mean = 0 StdDev = 0.4422
+Attribute: descripcion_categoria_Bienes Inmuebles
+Normal Distribution. Mean = 0 StdDev = 0.0822
+Attribute: descripcion_categoria_Cultura y Turismo
+Normal Distribution. Mean = 0.0845 StdDev = 0.2781
+Attribute: descripcion_categoria_Económico-Productivo
+Normal Distribution. Mean = 0.0986 StdDev = 0.2981
+Attribute: descripcion_categoria_Educación
+Normal Distribution. Mean = 0.1056 StdDev = 0.3074
+Attribute: descripcion_categoria_Gobierno
+Normal Distribution. Mean = 0.3662 StdDev = 0.4818
+Attribute: descripcion_categoria_Identificación
+Normal Distribution. Mean = 0.1408 StdDev = 0.3479
+Attribute: descripcion_categoria_Impuestos
+Normal Distribution. Mean = 0.007 StdDev = 0.0836
+Attribute: descripcion_categoria_Justicia
+Normal Distribution. Mean = 0.1127 StdDev = 0.3162
+Attribute: descripcion_categoria_Medio Ambiente
+Normal Distribution. Mean = 0 StdDev = 0.2211
+Attribute: descripcion_categoria_Salud
+Normal Distribution. Mean = 0.0775 StdDev = 0.2673
+Attribute: descripcion_categoria_Transporte
+Normal Distribution. Mean = 0.007 StdDev = 0.0836
+
+Cluster: 3 Prior probability: 0.181
+
+Attribute: duracion_meses
+Normal Distribution. Mean = 0.0079 StdDev = 0.0717
+Attribute: duracion_dias
+Normal Distribution. Mean = 0.0221 StdDev = 0.033
+Attribute: duracion_horas
+Normal Distribution. Mean = 0.1492 StdDev = 0.1595
+Attribute: duracion_minutos
+Normal Distribution. Mean = 0.0112 StdDev = 0.0577
+Attribute: denominacion_Agencia Estatal de Medicamentos y Tecnologías en Salud
+Normal Distribution. Mean = 0 StdDev = 0.211
+Attribute: denominacion_Agencia Estatal de Vivienda
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Agencia Nacional de Hidrocarburos
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Agencia para el Desarrollo de la Sociedad de la Información en Bolivia
+Normal Distribution. Mean = 0 StdDev = 0.0539
+Attribute: denominacion_Autoridad de Fiscalización y Control Social de Agua Potable y Saneamiento Básico
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Autoridad de Fiscalización y Control Social de Bosques y Tierras
+Normal Distribution. Mean = 0 StdDev = 0.2381
+Attribute: denominacion_Autoridad de Regulación y Fiscalización de Telecomunicaciones y Transportes
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Comando General de la Policía Boliviana
+Normal Distribution. Mean = 0 StdDev = 0.1479
+Attribute: denominacion_Comité Ejecutivo de la Universidad Boliviana
+Normal Distribution. Mean = 0.0108 StdDev = 0.1031
+Attribute: denominacion_Consejo Nacional del Cine
+Normal Distribution. Mean = 0 StdDev = 0.0762
+Attribute: denominacion_Consejo de la Magistratura
+Normal Distribution. Mean = 0 StdDev = 0.0762
+Attribute: denominacion_Corporación Minera de Bolivia
+Normal Distribution. Mean = 0 StdDev = 0.0879
+Attribute: denominacion_Dirección Departamental de Educación Chuquisaca
+Normal Distribution. Mean = 0.0591 StdDev = 0.2359
+Attribute: denominacion_Dirección Departamental de Educación La Paz
+Normal Distribution. Mean = 0 StdDev = 0.1117
+Attribute: denominacion_Dirección Departamental de Educación Tarija
+Normal Distribution. Mean = 0.0914 StdDev = 0.2882
+Attribute: denominacion_Dirección General de Migración
+Normal Distribution. Mean = 0.0054 StdDev = 0.0731
+Attribute: denominacion_Dirección del Notariado Plurinacional
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Escuela Nacional de Salud
+Normal Distribution. Mean = 0.0161 StdDev = 0.126
+Attribute: denominacion_Escuela de Gestión Pública Plurinacional
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Gobierno Autonomo Municipal de Trinidad
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Gobierno Autónomo Departamental de Cochabamba
+Normal Distribution. Mean = 0 StdDev = 0.1117
+Attribute: denominacion_Instituto Boliviano de Metrología
+Normal Distribution. Mean = 0 StdDev = 0.1238
+Attribute: denominacion_Instituto Boliviano de la Ceguera
+Normal Distribution. Mean = 0 StdDev = 0.0879
+Attribute: denominacion_Instituto Geográfico Militar
+Normal Distribution. Mean = 0.0054 StdDev = 0.0731
+Attribute: denominacion_Instituto Nacional de Innovación Agropecuaria y Forestal
+Normal Distribution. Mean = 0 StdDev = 0.0623
+Attribute: denominacion_Ministerio de Culturas y Turismo
+Normal Distribution. Mean = 0 StdDev = 0.0822
+Attribute: denominacion_Ministerio de Desarrollo Rural y Tierras
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Ministerio de Educación de Bolivia
+Normal Distribution. Mean = 0.543 StdDev = 0.4981
+Attribute: denominacion_Ministerio de Gobierno
+Normal Distribution. Mean = 0 StdDev = 0.1117
+Attribute: denominacion_Ministerio de Justicia y Transparencia Interinstitucional
+Normal Distribution. Mean = 0 StdDev = 0.0696
+Attribute: denominacion_Ministerio de Medio Ambiente y Agua
+Normal Distribution. Mean = 0 StdDev = 0.1238
+Attribute: denominacion_Ministerio de Obras Públicas, Servicios y Vivienda
+Normal Distribution. Mean = 0 StdDev = 0.1415
+Attribute: denominacion_Ministerio de Salud
+Normal Distribution. Mean = 0 StdDev = 0.0539
+Attribute: denominacion_Ministerio de Trabajo, Empleo y Previsión Social
+Normal Distribution. Mean = 0 StdDev = 0.0623
+Attribute: denominacion_Ministerio de la Presidencia
+Normal Distribution. Mean = 0 StdDev = 0.1117
+Attribute: denominacion_Ministerio de Planificación del Desarrollo
+Normal Distribution. Mean = 0 StdDev = 0.211
+Attribute: denominacion_Pro – Bolivia
+Normal Distribution. Mean = 0 StdDev = 0.0312
+Attribute: denominacion_Seguro Social Universitario de Cochabamba
+Normal Distribution. Mean = 0 StdDev = 0.0981
+Attribute: denominacion_Seguro Social Universitario de Oruro
+Normal Distribution. Mean = 0 StdDev = 0.0623
+Attribute: denominacion_Seguro Social Universitario de Tarija
+Normal Distribution. Mean = 0 StdDev = 0.0762
+Attribute: denominacion_Servicio General de Identificación Personal
+Normal Distribution. Mean = 0 StdDev = 0.0762
+Attribute: denominacion_Servicio General de Licencias de Conducir
+Normal Distribution. Mean = 0 StdDev = 0.1628
+Attribute: denominacion_Servicio Nacional de Meteorología e Hidrología
+Normal Distribution. Mean = 0 StdDev = 0.0441
+Attribute: denominacion_Servicio Nacional de Propiedad Intelectual
+Normal Distribution. Mean = 0 StdDev = 0.4162
+Attribute: denominacion_Servicio Nacional del Sistema de Reparto
+Normal Distribution. Mean = 0 StdDev = 0.1159
+Attribute: denominacion_Servicio de Impuestos Nacionales
+Normal Distribution. Mean = 0 StdDev = 0.0539
+Attribute: denominacion_Universidad Autónoma Tomás Frías
+Normal Distribution. Mean = 0.0054 StdDev = 0.0731
+Attribute: denominacion_Universidad Mayor Real y Pontificia de San Francisco Xavier
+Normal Distribution. Mean = 0.0591 StdDev = 0.2359
+Attribute: denominacion_Universidad Mayor de San Andrés
+Normal Distribution. Mean = 0.0323 StdDev = 0.1767
+Attribute: denominacion_Universidad Técnica de Oruro
+Normal Distribution. Mean = 0.172 StdDev = 0.3774
+Attribute: denominacion_Zona Franca Comercial e Industrial de Cobija
+Normal Distribution. Mean = 0 StdDev = 0.0822
+Attribute: forma_pago_costo_Depósito en cuenta
+Normal Distribution. Mean = 0.1183 StdDev = 0.3229
+Attribute: forma_pago_costo_Efectivo
+Normal Distribution. Mean = 0.8817 StdDev = 0.3229
+Attribute: descripcion_categoria_Bienes Inmuebles
+Normal Distribution. Mean = 0 StdDev = 0.0822
+Attribute: descripcion_categoria_Cultura y Turismo
+Normal Distribution. Mean = 0 StdDev = 0.2585
+Attribute: descripcion_categoria_Económico-Productivo
+Normal Distribution. Mean = 0 StdDev = 0.3936
+Attribute: descripcion_categoria_Educación
+Normal Distribution. Mean = 1 StdDev = 0.4401
+Attribute: descripcion_categoria_Gobierno
+Normal Distribution. Mean = 0 StdDev = 0.353
+Attribute: descripcion_categoria_Identificación
+Normal Distribution. Mean = 0 StdDev = 0.2502
+Attribute: descripcion_categoria_Impuestos
+Normal Distribution. Mean = 0 StdDev = 0.0696
+Attribute: descripcion_categoria_Justicia
+Normal Distribution. Mean = 0 StdDev = 0.2151
+Attribute: descripcion_categoria_Medio Ambiente
+Normal Distribution. Mean = 0 StdDev = 0.2211
+Attribute: descripcion_categoria_Salud
+Normal Distribution. Mean = 0 StdDev = 0.2869
+Attribute: descripcion_categoria_Transporte
+Normal Distribution. Mean = 0 StdDev = 0.2363
+
+
+Time taken to build model (full training data) : 0.03 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0        87 (  8%)
+1       475 ( 46%)
+2       281 ( 27%)
+3       186 ( 18%)
+
+
+Log likelihood: 70.26316
+

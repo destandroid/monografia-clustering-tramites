@@ -1,0 +1,181 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 3 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     tramites_gob_bo_preprocesado_one_hot_weka
+Instances:    1029
+Attributes:   68
+              duracion_meses
+              duracion_dias
+              duracion_horas
+              duracion_minutos
+              denominacion_Agencia Estatal de Medicamentos y Tecnologías en Salud
+              denominacion_Agencia Estatal de Vivienda
+              denominacion_Agencia Nacional de Hidrocarburos
+              denominacion_Agencia para el Desarrollo de la Sociedad de la Información en Bolivia
+              denominacion_Autoridad de Fiscalización y Control Social de Agua Potable y Saneamiento Básico
+              denominacion_Autoridad de Fiscalización y Control Social de Bosques y Tierras
+              denominacion_Autoridad de Regulación y Fiscalización de Telecomunicaciones y Transportes
+              denominacion_Comando General de la Policía Boliviana
+              denominacion_Comité Ejecutivo de la Universidad Boliviana
+              denominacion_Consejo Nacional del Cine
+              denominacion_Consejo de la Magistratura
+              denominacion_Corporación Minera de Bolivia
+              denominacion_Dirección Departamental de Educación Chuquisaca
+              denominacion_Dirección Departamental de Educación La Paz
+              denominacion_Dirección Departamental de Educación Tarija
+              denominacion_Dirección General de Migración
+              denominacion_Dirección del Notariado Plurinacional
+              denominacion_Escuela Nacional de Salud
+              denominacion_Escuela de Gestión Pública Plurinacional
+              denominacion_Gobierno Autonomo Municipal de Trinidad
+              denominacion_Gobierno Autónomo Departamental de Cochabamba
+              denominacion_Instituto Boliviano de Metrología
+              denominacion_Instituto Boliviano de la Ceguera
+              denominacion_Instituto Geográfico Militar
+              denominacion_Instituto Nacional de Innovación Agropecuaria y Forestal
+              denominacion_Ministerio de Culturas y Turismo
+              denominacion_Ministerio de Desarrollo Rural y Tierras
+              denominacion_Ministerio de Educación de Bolivia
+              denominacion_Ministerio de Gobierno
+              denominacion_Ministerio de Justicia y Transparencia Interinstitucional
+              denominacion_Ministerio de Medio Ambiente y Agua
+              denominacion_Ministerio de Obras Públicas, Servicios y Vivienda
+              denominacion_Ministerio de Salud
+              denominacion_Ministerio de Trabajo, Empleo y Previsión Social
+              denominacion_Ministerio de la Presidencia
+              denominacion_Ministerio de Planificación del Desarrollo
+              denominacion_Pro – Bolivia
+              denominacion_Seguro Social Universitario de Cochabamba
+              denominacion_Seguro Social Universitario de Oruro
+              denominacion_Seguro Social Universitario de Tarija
+              denominacion_Servicio General de Identificación Personal
+              denominacion_Servicio General de Licencias de Conducir
+              denominacion_Servicio Nacional de Meteorología e Hidrología
+              denominacion_Servicio Nacional de Propiedad Intelectual
+              denominacion_Servicio Nacional del Sistema de Reparto
+              denominacion_Servicio de Impuestos Nacionales
+              denominacion_Universidad Autónoma Tomás Frías
+              denominacion_Universidad Mayor Real y Pontificia de San Francisco Xavier
+              denominacion_Universidad Mayor de San Andrés
+              denominacion_Universidad Técnica de Oruro
+              denominacion_Zona Franca Comercial e Industrial de Cobija
+              forma_pago_costo_Depósito en cuenta
+              forma_pago_costo_Efectivo
+              descripcion_categoria_Bienes Inmuebles
+              descripcion_categoria_Cultura y Turismo
+              descripcion_categoria_Económico-Productivo
+              descripcion_categoria_Educación
+              descripcion_categoria_Gobierno
+              descripcion_categoria_Identificación
+              descripcion_categoria_Impuestos
+              descripcion_categoria_Justicia
+              descripcion_categoria_Medio Ambiente
+              descripcion_categoria_Salud
+              descripcion_categoria_Transporte
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 5
+Within cluster sum of squared errors: 1627.5144037011153
+
+Initial starting points (random):
+
+Cluster 0: 0,0.015,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+Cluster 1: 0,0.015,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+Cluster 2: 0,0.04,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                                                                                               Cluster#
+Attribute                                                                                          Full Data          0          1          2
+                                                                                                    (1029.0)    (244.0)    (613.0)    (172.0)
+=============================================================================================================================================
+duracion_meses                                                                                        0.0224     0.0066     0.0349          0
+duracion_dias                                                                                         0.0624     0.0206     0.0887     0.0277
+duracion_horas                                                                                        0.0665     0.1311     0.0587     0.0023
+duracion_minutos                                                                                       0.023     0.0178     0.0201     0.0407
+denominacion_Agencia Estatal de Medicamentos y Tecnologías en Salud                                  0.0466          0     0.0783          0
+denominacion_Agencia Estatal de Vivienda                                                               0.001     0.0041          0          0
+denominacion_Agencia Nacional de Hidrocarburos                                                         0.001          0     0.0016          0
+denominacion_Agencia para el Desarrollo de la Sociedad de la Información en Bolivia                  0.0029          0     0.0049          0
+denominacion_Autoridad de Fiscalización y Control Social de Agua Potable y Saneamiento Básico        0.001     0.0041          0          0
+denominacion_Autoridad de Fiscalización y Control Social de Bosques y Tierras                        0.0603          0     0.1011          0
+denominacion_Autoridad de Regulación y Fiscalización de Telecomunicaciones y Transportes             0.001          0     0.0016          0
+denominacion_Comando General de la Policía Boliviana                                                 0.0224     0.0164      0.031          0
+denominacion_Comité Ejecutivo de la Universidad Boliviana                                            0.0019     0.0082          0          0
+denominacion_Consejo Nacional del Cine                                                                0.0058     0.0041     0.0082          0
+denominacion_Consejo de la Magistratura                                                               0.0058     0.0246          0          0
+denominacion_Corporación Minera de Bolivia                                                           0.0078          0     0.0131          0
+denominacion_Dirección Departamental de Educación Chuquisaca                                        0.0107     0.0451          0          0
+denominacion_Dirección Departamental de Educación La Paz                                            0.0126          0     0.0212          0
+denominacion_Dirección Departamental de Educación Tarija                                            0.0243     0.0697     0.0131          0
+denominacion_Dirección General de Migración                                                         0.1681     0.0041          0          1
+denominacion_Dirección del Notariado Plurinacional                                                    0.001          0     0.0016          0
+denominacion_Escuela Nacional de Salud                                                                0.0058     0.0246          0          0
+denominacion_Escuela de Gestión Pública Plurinacional                                                0.001          0     0.0016          0
+denominacion_Gobierno Autonomo Municipal de Trinidad                                                   0.001     0.0041          0          0
+denominacion_Gobierno Autónomo Departamental de Cochabamba                                           0.0126     0.0533          0          0
+denominacion_Instituto Boliviano de Metrología                                                       0.0155          0     0.0261          0
+denominacion_Instituto Boliviano de la Ceguera                                                        0.0078     0.0082     0.0098          0
+denominacion_Instituto Geográfico Militar                                                            0.0019     0.0082          0          0
+denominacion_Instituto Nacional de Innovación Agropecuaria y Forestal                                0.0039          0     0.0065          0
+denominacion_Ministerio de Culturas y Turismo                                                         0.0068          0     0.0114          0
+denominacion_Ministerio de Desarrollo Rural y Tierras                                                  0.001          0     0.0016          0
+denominacion_Ministerio de Educación de Bolivia                                                      0.0982     0.3238     0.0359          0
+denominacion_Ministerio de Gobierno                                                                   0.0126          0     0.0212          0
+denominacion_Ministerio de Justicia y Transparencia Interinstitucional                                0.0049          0     0.0082          0
+denominacion_Ministerio de Medio Ambiente y Agua                                                      0.0155          0     0.0261          0
+denominacion_Ministerio de Obras Públicas, Servicios y Vivienda                                      0.0204     0.0082      0.031          0
+denominacion_Ministerio de Salud                                                                      0.0029     0.0041     0.0033          0
+denominacion_Ministerio de Trabajo, Empleo y Previsión Social                                        0.0039          0     0.0065          0
+denominacion_Ministerio de la Presidencia                                                             0.0126          0     0.0212          0
+denominacion_Ministerio de Planificación del Desarrollo                                          0.0466          0     0.0783          0
+denominacion_Pro – Bolivia                                                                           0.001          0     0.0016          0
+denominacion_Seguro Social Universitario de Cochabamba                                                0.0097      0.041          0          0
+denominacion_Seguro Social Universitario de Oruro                                                     0.0039     0.0164          0          0
+denominacion_Seguro Social Universitario de Tarija                                                    0.0058     0.0246          0          0
+denominacion_Servicio General de Identificación Personal                                             0.0058          0     0.0098          0
+denominacion_Servicio General de Licencias de Conducir                                                0.0272          0     0.0457          0
+denominacion_Servicio Nacional de Meteorología e Hidrología                                         0.0019          0     0.0033          0
+denominacion_Servicio Nacional de Propiedad Intelectual                                               0.2225          0     0.3736          0
+denominacion_Servicio Nacional del Sistema de Reparto                                                 0.0136     0.0574          0          0
+denominacion_Servicio de Impuestos Nacionales                                                         0.0029     0.0123          0          0
+denominacion_Universidad Autónoma Tomás Frías                                                      0.0019     0.0041     0.0016          0
+denominacion_Universidad Mayor Real y Pontificia de San Francisco Xavier                              0.0107     0.0451          0          0
+denominacion_Universidad Mayor de San Andrés                                                         0.0058     0.0246          0          0
+denominacion_Universidad Técnica de Oruro                                                            0.0311     0.1311          0          0
+denominacion_Zona Franca Comercial e Industrial de Cobija                                             0.0068     0.0287          0          0
+forma_pago_costo_Depósito en cuenta                                                                  0.7337          0          1     0.8256
+forma_pago_costo_Efectivo                                                                             0.2663          1          0     0.1744
+descripcion_categoria_Bienes Inmuebles                                                                0.0068     0.0287          0          0
+descripcion_categoria_Cultura y Turismo                                                               0.0719     0.0041     0.0946     0.0872
+descripcion_categoria_Económico-Productivo                                                           0.1914     0.0082      0.292      0.093
+descripcion_categoria_Educación                                                                      0.2624     0.6721     0.1485     0.0872
+descripcion_categoria_Gobierno                                                                        0.1458      0.123     0.0914     0.3721
+descripcion_categoria_Identificación                                                                 0.0671      0.041     0.0587     0.1337
+descripcion_categoria_Impuestos                                                                       0.0049     0.0123          0     0.0116
+descripcion_categoria_Justicia                                                                        0.0486          0      0.044     0.1337
+descripcion_categoria_Medio Ambiente                                                                  0.0515     0.0041     0.0848          0
+descripcion_categoria_Salud                                                                           0.0904     0.0943     0.0962      0.064
+descripcion_categoria_Transporte                                                                      0.0593     0.0123     0.0897     0.0174
+
+
+
+
+Time taken to build model (full training data) : 0.01 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       244 ( 24%)
+1       613 ( 60%)
+2       172 ( 17%)
+
